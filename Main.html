@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
     <meta charset="UTF-8">
-    <title>MyAppointment</title>
+    <title>Appointment.my</title>
     <style>
         html,body {
             margin:0;
@@ -11,6 +11,7 @@
         body {
             background-color: #fff1f9;
         }
+
         div.title {
             width: 100%;
             height: 80px;
@@ -22,9 +23,41 @@
             border-bottom: 10px solid #e04f4f;
             background: #e4ceda;
         }
+
+        .button {
+            border: none;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+            border-radius: 15px;
+            margin-top: 15%;
+        }
+
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 4px solid #e04f4f;
+        }
+
+        .button1:hover {
+            background-color: #e04f4f;
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .centered {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="title">MyAppointment</div>
-    <button type="button">Start your appointment!</button>
+    <div class="title">Appointment.my</div>
+    <div class="centered">
+    <a href=""><button class="button button1">Start your appointment!</button></a>
+    </div>
 </body>
+</html>
