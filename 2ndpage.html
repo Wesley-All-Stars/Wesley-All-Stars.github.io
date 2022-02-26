@@ -1,0 +1,93 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Appointment Form</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            margin: 35px 0 20px 0 ;
+        }
+
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            margin: 16px 0 20px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .twentyPercent {
+            width: 20%;
+            padding-left: 1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Appointment</h1>
+        <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Full Name (IC)" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <table>
+            <tr>
+                <td class="twentyPercent">State</td>
+                <td>
+                <form>
+                    <select id="State" name="State">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    </select>
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="twentyPercent">District</td>
+                <td>
+                <form>
+                    <select id="District" name="District">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    </select>
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="twentyPercent">Doctor</td>
+                <td>
+                <form>
+                    <select id="Doctor" name="Doctor">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    </select>
+                </form>
+                </td>
+            </tr>
+          </table>
+          <div class="form-group">
+            <textarea placeholder="Medical Conditions/Current Medications" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+      </div>
+    
+</body>
+</html>
