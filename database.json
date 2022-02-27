@@ -1,0 +1,37 @@
+[
+ {
+  "Name": "Dr. Lee Wah Yeh ",
+  "Clinic": "Klinik Lee dan Rakan-rakan",
+  "State": "Selangor",
+  "City": "Kuala Lumpur",
+  "Email ": "appointment.my.leewahyeh@gmail.com"
+ },
+ {
+  "Name": "Dr. Lim Ming Kow ",
+  "Clinic": "Klinik LJT",
+  "State": "Perak",
+  "City": "Ipoh",
+  "Email ": "appointment.my.limmingkow@gmail.com"
+ },
+ {
+  "Name": "Dr. Ng Yoke Lan ",
+  "Clinic": "General Hospital ",
+  "State": "Negeri Sembilan",
+  "City": "Seremban",
+  "Email ": "appointment.my.ngyokelan@gmail.com"
+ },
+ {
+  "Name": "Dr. Andrew Loo",
+  "Clinic": "St. Andrew Hospital",
+  "State": "Terengganu",
+  "City": "Kuala Terengganu",
+  "Email ": "appointment.my.andrewloo@gmail.com"
+ },
+ {
+  "Name": "Dr. Nicholas Tan",
+  "Clinic": "Clinic Tan and Thon",
+  "State": "Selangor",
+  "City": "Petaling Jaya",
+  "Email ": "appointment.my.nicholastan@gmail.com"
+ }
+]
