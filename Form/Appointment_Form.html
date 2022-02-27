@@ -45,29 +45,31 @@
               </div>
             </div>
           </div>
-          <table>
-            <tr>
-                
-                <td>
-                <form name="form1" id="form1" action="/action_page.php">
-                  State: <select name="state" id="State">
+            <table>
+              <tr>
+                  <td class="twentyPercent">State :</td>
+                  <td>
+                    <select name="state" id="State" required>
                       <option value="" selected="selected">Select state</option>
                     </select>
-                    <br><br>
-                  City: <select name="city" id="City">
+                  </td>
+              </tr>
+              <tr>
+                  <td class="twentyPercent">City :</td>
+                  <td>
+                    <select name="city" id="City" required>
+                      <option value="" selected="selected">Please select state first</option>
+                    </select>
+                  </td>
+              <tr>
+                  <td class="twentyPercent">Doctor :</td>
+                  <td>
+                    <select name="chapter" id="Doctor" required>
                       <option value="" selected="selected">Please select city first</option>
                     </select>
-                    <br><br>
-                  Doctor: <select name="chapter" id="Doctor">
-                      <option value="" selected="selected">Please select doctor first</option>
-                    </select>
-                    <br><br>
-                    <input type="submit" value="Submit">  
-                  </form>
-                </td>
-            </tr>
-           
-          </table>
+                  </td>
+                </tr>
+            </table>
           <div class="form-group">
             <textarea placeholder="Medical Conditions/Current Medications" class="form-control" name="message" rows="10" required></textarea>
           </div>
