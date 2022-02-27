@@ -1,5 +1,5 @@
 var subjectObject ={
-    "Selengor":{
+    "Selangor":{
        "Kuala Lumpur":{"Dr. Lee Wah Yeh": "appointment.my.leewahyeh@gmail.com"},
        "Petaling Jaya": {"Dr. Nicholas Tan": "appointment.my.nicholastan@gmail.com"}
    },
@@ -40,19 +40,18 @@ var subjectObject ={
   }
 
   function sendEmail(form) {
-    var statesel = form.state;
-    var state = statesel.options[statesel.selectedIndex].value;
-    var citysel = form.city;
-    var city = citysel.options[citysel.selectedIndex].value;
-    var doctorsel = form.doctor;
-    var doctor = doctorsel.options[doctorsel.selectedIndex].value;
+    var statesel = document.getElementById('State');
+    var state = statesel.options[statesel.selectedIndex].text;
+    var citysel = document.getElementById('City');
+    var city = citysel.options[citysel.selectedIndex].text;
+    var doctorsel = document.getElementById('Doctor');
+    var doctor = doctorsel.options[doctorsel.selectedIndex].text;
 
     var email = subjectObject[state][city][doctor];
-    var subject = form.subject.value;
-    var enquiry = form.message.value;
-    var sender = form.sender.value;
-    var message = "Good day Dr,\nI am a resident in"+ city +", "+ state +". I am writing this email to make a medical enquiry: "+ message + "\nI hope that you can answer my enquiries. Please inform me if a doctor appointment is neccessary.\nYours faithfully,\n" + sender;
+    var subject = document.getElementById('Subjectline').value;
+    var enquiry = document.getElementById('Message').value;
+    var sender = document.getElementById('Sender').value;
+    var message = "Good day Dr,\nI am a resident in "+ city +", "+ state +". I am writing this email to make a medical enquiry: "+ enquiry + "\nI hope that you can answer my enquiries. Please inform me if a doctor appointment is neccessary.\nYours faithfully,\n" + sender;
 
-    //window.location.href = "mailto:"+email+"?subject="+subject+"&body="+ message;
-    alert(message);
+    window.location.href = "mailto:"+email+"?subject="+subject+"&body="+ message;
   }
