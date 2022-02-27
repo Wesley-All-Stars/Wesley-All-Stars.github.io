@@ -1,19 +1,19 @@
 [
- {
-     "Selengor":{
-        "Kuala Lumpur":{"Dr. Lee Wah Yeh": ["appointment.my.leewahyeh@gmail.com"]},
-        "Petaling Jaya": {"Dr. Nicholas Tan": ["appointment.my.nicholastan@gmail.com"]}
-    },
-    "Negeri Sembilan":{
-        "Nilai":{"Dr. Andrew Loo": ["appointment.my.andrewloo@gmail.com"]},
-        "Seremban": {"Dr. Ng Yoke Lan ": ["appointment.my.ngyokelan@gmail.com"]}
-    },
-    "Perak":{
-        "Ipoh":{"Dr. Lim Ming Kow ":["appointment.my.limmingkow@gmail.com"]}
+    {
+        "Selengor":{
+           "Kuala Lumpur":{"Dr. Lee Wah Yeh": ["appointment.my.leewahyeh@gmail.com"]},
+           "Petaling Jaya": {"Dr. Nicholas Tan": ["appointment.my.nicholastan@gmail.com"]}
+       },
+       "Negeri Sembilan":{
+           "Nilai":{"Dr. Andrew Loo": ["appointment.my.andrewloo@gmail.com"]},
+           "Seremban": {"Dr. Ng Yoke Lan ": ["appointment.my.ngyokelan@gmail.com"]}
+       },
+       "Perak":{
+           "Ipoh":{"Dr. Lim Ming Kow ":["appointment.my.limmingkow@gmail.com"]}
+       }
+                   
+   
     }
-                
-
- }
-
-
-]
+   
+   
+   ]

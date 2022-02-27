@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Appointment Form</title>
+    <script src ="js/main.js"></script>
+    <style>
+
+        h1 {
+            text-align: center;
+            margin: 35px 0 20px 0 ;
+        }
+
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            margin: 16px 0 20px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .twentyPercent {
+            width: 20%;
+            padding-left: 1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Appointment</h1>
+        <form id ="FRM" onsubmit="sendEmail(this)">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="sender" id="Sender" class="form-control" placeholder="Full Name (IC)" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" id="Email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+            <div class="form-row" margin-top="20">
+              <div class="col">
+                <input type="text" name="subjectline" id="Subjectline" class="form-control" placeholder="Email Subject Line" required>
+              </div>
+            </div>
+          </div>
+          <table>
+            <tr>
+                
+                <td>
+                  State: <select name="state" id="State" required> 
+                      <option value="" selected="selected">Select state</option>
+                    </select>
+                    <br><br>
+                  City: <select name="city" id="City" required>
+                      <option value="" selected="selected">Please select city first</option>
+                    </select>
+                    <br><br>
+                  Doctor: <select name="doctor" id="Doctor" required>
+                      <option value="" selected="selected">Please select doctor first</option>
+                    </select>
+                    <br><br>
+                </td>
+            </tr>
+           
+          </table>
+          <div class="form-group">
+            <textarea placeholder="Medical Conditions/Current Medications" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+      </div>
+    
+</body>
+</html>
